@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  dhcp:
+    build: ./dhcp-server
+    container_name: dhcp
+    network_mode: "host"
+    volumes:
+      - ./etc:/etc/dhcp
+      - ./var:/var/lib/dhcpd
+    ports:
+      - 67:67/udp
+    restart: always
+    stop_grace_period: 1s
