@@ -1,6 +1,6 @@
 ## 概要
 
-以下の Dockerfikle をベースに改造したもの。
+以下の Dockerfikle をベースに改造したもの。  
 https://github.com/container-images/dhcp-server.git
 
 変更点:
